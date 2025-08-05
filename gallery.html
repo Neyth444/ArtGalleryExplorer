@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galerie d'Art - Met Museum</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/gallery.css"/>
+  <link rel="stylesheet" href="assets/css/image.css"/>
+  <link rel="stylesheet" href="assets/css/modal.css"/>
+  <link rel="stylesheet" href="assets/css/navbar.css"/>
+  <link rel="stylesheet" href="assets/css/searchbar.css">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">
+        <img src="assets/img/logo.png" />
+    </div>
+    <ul class="nav-links">
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#gallery">Galerie</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <h1>Galerie d'Art</h1>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Rechercher un artiste ou une œuvre..." />
+      <button id="search-btn">Rechercher</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="gallery" class="gallery">
+      <!--injection des oeuvres en js via api met musuem dans cette section du code -->
+    </section>
+  </main>
+
+  <footer>
+    <p>Test technique pour Otomoro, ce site est purement fictif et expérimente l'utilisation d'api de Met Museum</p>
+  </footer>
+
+  <!--modal si on clique sur une oeuvre -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="modal-close" class="modal-close">&times;</span>
+      <img id="modal-image" src="" alt="" />
+      <div class="modal-details">
+        <h2 id="modal-title"></h2>
+        <p><strong>Artiste :</strong> <span id="modal-artist"></span></p>
+        <p><strong>Date :</strong> <span id="modal-date"></span></p>
+        <p><strong>Description :</strong> <span id="modal-desc"></span></p>
+        <p><strong>Dimensions :</strong> <span id="modal-size"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+/*boite de recherche pour les tableaux ou quelconques autres oeuvre*/
+.search-container {
+  margin-top: 1rem;
+}
+
+.search-container input {
+  padding: 0.5rem;
+  width: 250px;
+  max-width: 80%;
+}
+
+.search-container button {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+

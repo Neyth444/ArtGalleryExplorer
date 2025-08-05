@@ -1,0 +1,64 @@
+/* NAVIGATION FIXE */
+.navbar {
+  position: fixed; /* pour que la barre suive l'utilisateur quand il scroll*/
+  top: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #000000;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+.logo img {
+  height: 40px; /* ajuste la hauteur selon ce qui te convient */
+  width: auto;  /* garde le ratio original */
+  display: block;
+}
+
+/* Décale le reste du contenu à cause de la navbar fixe */
+body {
+  padding-top: 80px; /* hauteur de la navbar */
+}

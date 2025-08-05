@@ -4,6 +4,7 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   padding: 2rem;
+  color: black; /* ajout d'une couleur pour rendre visible le texte javascript*/
 }
 /*carte d'art*/
 .art-card {

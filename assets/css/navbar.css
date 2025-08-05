@@ -53,12 +53,11 @@
 
 
 .logo img {
-  height: 40px; /* ajuste la hauteur selon ce qui te convient */
-  width: auto;  /* garde le ratio original */
+  height: 40px; 
+  width: auto;  
   display: block;
 }
 
-/* Décale le reste du contenu à cause de la navbar fixe */
 body {
-  padding-top: 80px; /* hauteur de la navbar */
+  padding-top: 80px; 
 }

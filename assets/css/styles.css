@@ -31,3 +31,71 @@ body h1 {
 body p1 {
     color: black;
 }
+
+
+/* ...existing code... */ /*//* ...existing code... */ /*reprise d'un code via github*/
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 30px 0 20px 0;
+}
+
+#search-input {
+  padding: 12px 18px;
+  border: 2px solid #2c3e50;
+  border-radius: 25px;
+  font-size: 1rem;
+  outline: none;
+  width: 320px;
+  transition: border 0.2s;
+}
+
+#search-input:focus {
+  border-color: #2980b9;
+}
+
+#search-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 22px;
+  background: #2c3e50;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+}
+
+#search-btn:hover {
+  background: #2980b9;
+}
+
+.search-icon {
+  font-size: 1.1em;
+}
+/* ...existing code... */  /*reprise d'un code via github*/
+.cta-button {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 2px solid #2c3e50;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #2c3e50;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+  cursor: pointer;
+}
+.cta-button:hover {
+  background-color: #2c3e50;
+  color: #fff;
+}
+/* ...existing code... */

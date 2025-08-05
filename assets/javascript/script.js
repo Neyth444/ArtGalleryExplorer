@@ -12,7 +12,7 @@ const modalDate = document.getElementById("modal-date");
 const modalDesc = document.getElementById("modal-desc");
 const modalSize = document.getElementById("modal-size");
 
-// Fermer le modal
+// fermer le modal
 modalClose.addEventListener("click", () => {
   modal.style.display = "none";
 });
@@ -53,7 +53,7 @@ async function fetchArtworks(query = "van gogh") {
   }
 }
 
-// Affiche les cartes d'œuvres
+//fonction pour afficher les œuvres dans la galerie
 function displayGallery(artworks) {
   gallery.innerHTML = "";
 
@@ -74,7 +74,7 @@ function displayGallery(artworks) {
       </div>
     `;
 
-    // Ajout du modal au clic
+    //creation de l'event listener pour le modal
     card.addEventListener("click", () => {
       modal.style.display = "block";
       modalImage.src = art.primaryImage || art.primaryImageSmall;
@@ -89,7 +89,7 @@ function displayGallery(artworks) {
   });
 }
 
-// Lancer la recherche
+// zjout de l'event listener pour le bouton de recherche
 searchBtn.addEventListener("click", () => {
   const query = searchInput.value.trim();
   if (query) {
@@ -97,5 +97,5 @@ searchBtn.addEventListener("click", () => {
   }
 });
 
-// Chargement initial
+// initialisation de la galerie avec une recherche par défaut
 fetchArtworks();

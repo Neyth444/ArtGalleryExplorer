@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Galerie d'Art - Met Museum</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - Galerie d'Art</title>
+  <!-- stylesheets -->
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="stylesheet" href="assets/css/gallery.css"/>
   <link rel="stylesheet" href="assets/css/image.css"/>
@@ -13,52 +14,28 @@
 
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-  <div class="nav-container">
-    <div class="logo">
-        <img src="assets/img/logo.png" />
+<!-- navigation bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt="Logo"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="gallery.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
-    <ul class="nav-links">
-      <li><a href="#accueil">Accueil</a></li>
-      <li><a href="#gallery">Galerie</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-    <h1>Galerie d'Art</h1>
-    <div class="search-container">
-      <input type="text" id="search-input" placeholder="Rechercher un artiste ou une œuvre..." />
-      <button id="search-btn">Rechercher</button>
+  </nav>
+<!-- Titre  et presentation -->
+  <header class="hero-section">
+    <div class="hero-content">
+      <h1>Bienvenue sur la Galerie d'Art du Met Museum</h1>
+      <p>Plongez dans une collection exceptionnelle d’œuvres d’art issues du Metropolitan Museum of Art de New York.</p>
+      <!-- redirection vers la galerie -->
+      <a href="gallery.html" class="cta-button">Découvrir la galerie</a>
     </div>
   </header>
 
-  <main>
-    <section id="gallery" class="gallery">
-      <!--injection des oeuvres en js via api met musuem dans cette section du code -->
-    </section>
-  </main>
-
-  <footer>
-    <p>Test technique pour Otomoro, ce site est purement fictif et expérimente l'utilisation d'api de Met Museum</p>
-  </footer>
-
-  <!--modal si on clique sur une oeuvre -->
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span id="modal-close" class="modal-close">&times;</span>
-      <img id="modal-image" src="" alt="" />
-      <div class="modal-details">
-        <h2 id="modal-title"></h2>
-        <p><strong>Artiste :</strong> <span id="modal-artist"></span></p>
-        <p><strong>Date :</strong> <span id="modal-date"></span></p>
-        <p><strong>Description :</strong> <span id="modal-desc"></span></p>
-        <p><strong>Dimensions :</strong> <span id="modal-size"></span></p>
-      </div>
-    </div>
-  </div>
-
-  <script src="assets/javascript/script.js"></script>
 </body>
 </html>
